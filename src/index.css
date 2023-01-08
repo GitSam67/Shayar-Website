@@ -1,0 +1,47 @@
+*{
+    scroll-behavior: smooth;
+}
+
+#starter{
+    background-image: url("");
+}
+
+#homsoc div:hover{
+    transform: scale(1.1);
+}
+
+#applogo{
+    height: 500px;
+    width: 300px;
+}
+
+#quick a:hover{
+    transform: scale(1.1);
+}
+
+#social a:hover{
+    transform: scale(1.3);
+}
+
+#link a:hover{
+    transform: scale(0.97);
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(blue,magenta);
+    border-radius: 25px; 
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
