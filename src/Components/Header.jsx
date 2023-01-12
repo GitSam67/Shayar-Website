@@ -8,7 +8,7 @@ export default function Header(){
       <nav className="container mx-auto flex flex-row p-3 md:flex-row items-center">
         <div className="w-1/3 text-left">
             <a className="title-font font-bold text-2xl flex flex-row items-center" href="#starter">
-                <img className="h-16 w-36 rounded-xl border-2 border-purple-900" src="../src/assets/shayarlogo.png" alt="logo" />
+                <img className="mainlogo h-16 w-36 rounded-xl border-2 border-purple-900" alt="logo" />
             </a>
         </div>
         <div id="link" className="w-2/3 md:py-1 md:pl-3 flex flex-row items-center text-base justify-center">

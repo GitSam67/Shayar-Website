@@ -6,6 +6,10 @@
     background-image: url("./assets/home11.webp");
 }
 
+.mainlogo {
+    content: url("./assets/shayarlogo.png");
+}
+
 #homsoc div:hover{
     transform: scale(1.1);
 }

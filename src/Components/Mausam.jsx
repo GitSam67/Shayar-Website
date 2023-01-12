@@ -63,11 +63,11 @@ export default function Mausam() {
     <nav className="container mx-auto flex flex-row p-3 md:flex-row items-center">
       <div className="w-1/3 text-left">
           <a className="title-font font-bold text-2xl flex flex-row items-center" href="/Shayar-Website/">
-              <img className="h-14 w-32 rounded-lg" src="../src/assets/shayarlogo.png" alt="logo" />
+              <img className="mainlogo h-16 w-36 rounded-xl border-2 border-purple-900" alt="logo" />
           </a>
       </div>
-      <div id="link" className="w-2/3 md:py-1 md:pl-3 flex flex-row items-center text-base justify-center">
-        <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 title-font sm:text-3xl text-2xl mb-4 font-extrabold"> Shayar Community Publication house </h4>
+      <div id="link" className="w-2/3 md:py-1 flex flex-row items-center text-base justify-center">
+        <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 title-font sm:text-4xl text-3xl font-extrabold"> Shayar Community Publication house </h4>
       </div>
     </nav>
   </header>
