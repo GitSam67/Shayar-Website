@@ -3,7 +3,7 @@
 }
 
 #starter{
-    background-image: url("");
+    background-image: url("./assets/home11.webp");
 }
 
 #homsoc div:hover{
@@ -25,6 +25,23 @@
 
 #link a:hover{
     transform: scale(0.97);
+}
+
+#live {
+    animation: live 1s ease infinite;
+}
+
+@keyframes live {
+    from {
+        color: rgb(128, 0, 255);
+    }
+    to {
+        color: magenta;
+    }
+}
+
+#submit:hover{
+    transform: scale(1.05);
 }
 
 ::-webkit-scrollbar{

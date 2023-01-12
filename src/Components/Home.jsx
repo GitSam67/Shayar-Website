@@ -3,7 +3,7 @@ import {TypeAnimation} from "react-type-animation";
 
 export default function Home() {
   return (
-    <section id="home" className="border-2 border-purple-500">
+    <section id="home" className="border-2 border-t-0 border-purple-500">
       <div className="container mx-auto mt-5 mb-20 flex px-10 pt-10 pb-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow w-full mb-16 md:mb-0 flex flex-col mx-auto items-center text-center">
           <h1 className="title-font sm:text-2xl md:text-3xl lg:text-4xl mb-4 font-bold text-sky-600">
