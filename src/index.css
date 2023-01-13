@@ -44,6 +44,12 @@
     }
 }
 
+#subform {
+    background-image: url("./assets/formlogo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #submit:hover{
     transform: scale(1.05);
 }
