@@ -3,30 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="bg-purple-500">
-      <div className="container mx-auto flex px-5 pt-2 text-white pb-2 md:flex-row flex-col items-center">
-        <div className="flex flex-col justify-center lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <p className="text-2xl font-bold mb-10">
-            Shayar is a new-age social networking platform where talented poetry writers
-            & shayari lovers from all across the globe meet...!!
-            </p>
-            <p className="text-2xl font-extrabold">
-            Download Our App Today &
-            Be A Part of Social Shayari Network <br/>
-            <span className="text-xl font-thin"> Scroll through thousands of poetries at free of cost.</span>
-            </p>
-        </div>
-        <div className="lg:flex-grow md:w-1/2 flex flex-col mb-16 md:mb-0 items-center text-center">
-            <img id="applogo" className="rounded-xl border-2 border-purple-600" src="../src/assets/applogo.webp" alt="app" />
-        <br className="hidden lg:inline-block" />
-          <div className="flex justify-center items-center">
-            <a
-              href="#about"
-              className="inline-flex text-white bg-indigo-600 border-0 mb-2 py-2 px-6 focus:outline-none hover:bg-indigo-500 rounded-3xl text-lg">
-              Download our App now
-              <i class="fas fa-sm fa-chevron-right mt-4 ml-1"></i>
-            </a>
-          </div>
-        </div>
+      <div className="w-full text-transparent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iure quo vitae, officiis nemo pariatur, architecto quis quod laudantium obcaecati, deleniti exercitationem sequi autem laboriosam a totam atque ex maxime quidem! Velit ipsam amet ab praesentium, vel voluptatibus pariatur soluta officia distinctio suscipit iure consequatur, eum quibusdam repellat. Officia sapiente commodi sunt voluptas suscipit magni excepturi! Libero voluptatum, quasi, expedita ea veniam tenetur veritatis ab exercitationem, optio repudiandae nostrum nobis? Nostrum incidunt perferendis voluptates, beatae earum, facere nobis esse ex placeat culpa eius autem deserunt sunt omnis eum qui quasi quibusdam minus atque. Laudantium totam labore non distinctio numquam necessitatibus et deserunt. In ratione animi obcaecati cumque placeat. In quod placeat possimus deleniti tempora ratione, quos dicta officiis temporibus atque ipsam recusandae, provident vel voluptates quidem quia minima numquam. Cumque veniam vero nam qui nemo! Vel asperiores corporis reprehenderit illum, impedit recusandae architecto repellendus minima est suscipit ipsam nulla a quas, voluptas qui autem neque magni. Exercitationem ut blanditiis facere laudantium fugit atque, expedita enim explicabo aspernatur inventore voluptatum molestias voluptatibus maxime autem maiores consectetur nesciunt ea commodi delectus voluptate! Optio aut nesciunt quasi sequi itaque minus ipsum minima. Et nobis maxime expedita magnam a incidunt sit obcaecati. Ad blanditiis a aperiam quos vitae perferendis natus ipsum quis molestiae consectetur. Repellat ea eveniet corporis architecto nulla nihil! Error praesentium quasi qui, molestias nostrum tenetur voluptate, perferendis sed fugiat nemo, expedita provident reiciendis possimus numquam aliquam id eligendi deserunt magnam. Ab hic cum incidunt error voluptate in labore vero commodi id inventore, numquam ea dolore officia alias eaque nesciunt quis eum magnam ut? Quam ipsum placeat laboriosam id! Perspiciatis nisi magnam a reprehenderit nesciunt rerum officia fugiat assumenda quam eaque dolor recusandae, id architecto voluptates error labore. Provident laborum at aut voluptatum aperiam molestias vitae excepturi, itaque saepe commodi eligendi eum dolor, unde similique perferendis in nesciunt tempora quidem consequatur. Modi obcaecati, eveniet magni fugiat recusandae et minima nesciunt ullam fuga doloremque quo minus saepe quae laborum iure voluptate consequuntur ad a illum quaerat possimus, doloribus, itaque est! Dicta assumenda delectus, cumque beatae nihil eligendi nostrum amet ab est porro, ipsa perspiciatis minus quam minima iste illum neque incidunt esse nulla temporibus! Fuga culpa tempora rerum necessitatibus sequi temporibus enim id incidunt saepe voluptas ducimus, tempore, consequuntur est consequatur quos, laborum ea adipisci maiores. Non animi fugit excepturi facere ea voluptatibus, iste dolorem quis! Exercitationem vitae soluta eligendi laboriosam neque. Consequatur neque quod, eius nisi explicabo, voluptatibus omnis cumque optio vero quibusdam eum! Veritatis, vel aspernatur inventore quo placeat consectetur nemo commodi quia animi similique dicta assumenda? Exercitationem optio qui maxime officia illum repellat inventore cupiditate nemo quia mollitia explicabo, quidem, repellendus atque vitae magnam voluptatibus accusamus numquam similique eveniet illo quis dicta sit nihil. Asperiores illum harum sunt fuga expedita, tempora ipsam enim sequi aperiam dolorem eligendi quis architecto, maxime adipisci amet necessitatibus nisi saepe libero sed dignissimos vel voluptatem molestiae perspiciatis! Facilis quaerat expedita praesentium animi adipisci incidunt aut voluptatum, quia quibusdam repudiandae sit tempora voluptate accusamus non. Aliquid?
       </div>
     </section>
   );

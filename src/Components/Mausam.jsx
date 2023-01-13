@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CreatableSelect from "react-select/creatable";
+import { Link } from "react-router-dom";
 // import emailjs from "@emailjs/browser";
 
 const options = [
@@ -42,35 +42,22 @@ export default function Mausam() {
       alert("Form submitted successfully...!!");
     };
 
-    const colorStyle = {
-      control: (styles) => ({...styles, text: 'white', backgroundColor: 'black',
-          // borderColor: isFocused ? '#E238EC' : '1a202c',
-        }),
-      option: (styles, {data, isDisabled, isFocused, isSelected}) =>{
-        return {...styles, 
-          color: data.color, 
-          backgroundColor: isFocused ? '#2B65EC' : data.backgroundColor,
-
-        };
-      },
-    };
-
   return (
     <section id="mausam" className="relative bg-black">
     <header id="navbar" className="bg-black bg-opacity-90 border-2 border-purple-800 md:sticky top-0 z-10">
     <nav className="container mx-auto flex flex-row p-3 md:flex-row items-center">
       <div className="w-1/3 text-left">
-          <a className="title-font font-bold text-2xl flex flex-row items-center" href="/Shayar-Website/">
+          <Link className="title-font font-bold text-2xl flex flex-row items-center" to="/Shayar-Website/">
               <img className="mainlogo h-16 w-36 rounded-xl border-2 border-purple-900" alt="logo" />
-          </a>
+          </Link>
       </div>
       <div id="link" className="w-2/3 md:py-1 flex flex-row items-center text-base justify-center">
         <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 title-font sm:text-4xl text-3xl font-extrabold"> Shayar Community Publication house </h4>
       </div>
     </nav>
   </header>
-    <div className="container rounded-lg border-2 border-pink-500 text-white font-mono text-3xl px-5 my-5 py-2 mx-auto flex flex-wrap items-center justify-center">
-     <h1><span className="text-pink-600 title-font border-b-2 border-pink-600 font-mono font-bold text-3xl">Mausam</span> is a platform where every shayari lovers meet, compete & get a chance to bring out their inner artistry & showcase it to this ever-growing community...!!</h1>
+    <div className="container rounded-lg border-2 border-pink-500 text-white font-mono text-3xl px-5 my-8 py-5 mx-auto flex flex-wrap items-center justify-center">
+     <h1><span className="text-pink-600 title-font border-b-2 border-pink-600 font-mono font-bold text-3xl">Mausam</span> is a platform where every seasonal shayari lovers meet, compete & get a chance to bring out their inner artistry & showcase it to this ever-growing community...!!</h1>
      <h1 className="my-5">
         Now go, fill up this Contest form with your creative ideas, thoughts & wait for us to reach out to you if your work gets shortlisted.... <span>👇🏻</span>  
      </h1>
@@ -151,10 +138,11 @@ export default function Mausam() {
                 id="theme"
                 name="theme"
                 placeholder="Select your theme" 
-                className="w-4/6 h-11 bg-black rounded-lg border items-center pl-10 text-white border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 text-base outline-none py-1 pb-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-4/6 h-11 bg-black rounded-lg border items-center pl-10 text-gray-400 border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 focus:text-white text-base outline-none py-1 pb-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 onChange={(e) => setTheme(e.target.value)}
                 value={theme}
               >
+                <option className="bg-black text-white hover:bg-blue-500" value="" disabled selected>Select your theme</option>
                 <option className="bg-black text-white hover:bg-blue-500" value="love">Love</option>
                 <option className="bg-black text-white hover:bg-blue-500" value="nature">Nature</option>
                 <option className="bg-black text-white hover:bg-blue-500" value="religion">Religion/Spirituality</option>
