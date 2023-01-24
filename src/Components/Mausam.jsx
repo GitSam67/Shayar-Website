@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import emailjs from "@emailjs/browser";
 
+import "react-datepicker/dist/react-datepicker.css";
+
 const options = [
   { value: 'love', label: 'Love', color: 'white', backgroundColor: 'black'},
   { value: 'nature', label: 'Nature', color: 'white', backgroundColor: 'black' },
@@ -25,6 +27,8 @@ export default function Mausam() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [date, setDate] = useState(new Date());
+  const [gender, setGender] = useState("");
   const [title, setTitle] = useState("");
   const [theme, setTheme] = useState("");
   const [message, setMessage] = useState("");
@@ -35,6 +39,8 @@ export default function Mausam() {
       setName("");
       setEmail("");
       setPhone("");
+      setDate("");
+      setGender("");
       setTitle("");
       setTheme("");
       setMessage("");
@@ -56,8 +62,8 @@ export default function Mausam() {
       </div>
     </nav>
   </header>
-    <div className="container rounded-lg border-2 border-pink-500 text-white font-mono text-3xl px-5 my-8 py-5 mx-auto flex flex-wrap items-center justify-center">
-     <h1><span className="text-pink-600 title-font border-b-2 border-pink-600 font-mono font-bold text-3xl">Mausam</span> is a platform where every seasonal shayari lovers meet, compete & get a chance to bring out their inner artistry & showcase it to this ever-growing community...!!</h1>
+    <div className="container rounded-lg border-2 border-pink-500 text-white font-mono text-4xl px-5 my-8 py-5 mx-auto flex flex-wrap items-center justify-center">
+     <h1><span className="text-pink-600 title-font border-b-2 border-pink-600 font-mono font-bold text-4xl">Mausam</span> is a platform where every seasonal shayari lovers meet, compete & get a chance to bring out their inner artistry & showcase it to this ever-growing community...!!</h1>
      <h1 className="my-5">
         Now go, fill up this Contest form with your creative ideas, thoughts & wait for us to reach out to you if your work gets shortlisted.... <span>👇🏻</span>  
      </h1>
@@ -118,6 +124,45 @@ export default function Mausam() {
               />
             </div>
             <div className="relative mb-5 w-full">
+            <h2 className="text-2xl font-bold text-black mb-2">Enter your birth date:</h2>
+              <i class="fa fa-md fa-calendar absolute mt-3 ml-3 text-purple-500" />
+                <input
+                type="date"
+                id="date"
+                name="date"
+                autoComplete="off"
+                className="w-2/3 bg-black rounded-lg border items-center pl-10 text-white border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                onChange={(e) => setDate(e.target.value)}
+                value={date}
+                />
+            </div>
+            <div className="relative mb-5 w-full">
+            <h2 className="text-2xl font-bold text-black mb-2">Select your Gender:</h2>
+            <div className="flex flex-row justify-center align-center w-2/3 bg-black rounded-lg border items-center text-white border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <input
+                type="radio"
+                name="gender"
+                value={gender}
+                className="mr-1"
+                onChange={(e)=> setGender(e.target.value)}
+                /><span className="mr-2"> Male</span>
+                <input
+                type="radio"
+                name="gender"
+                value={gender}
+                className="mr-1"
+                onChange={(e)=> setGender(e.target.value)}
+                /><span className="mr-2"> Female</span>
+                <input
+                type="radio"
+                name="gender"
+                value={gender}
+                className="mr-1"
+                onChange={(e)=> setGender(e.target.value)}
+                /><span className="mr-2"> Others</span>
+                </div>
+            </div>
+            <div className="relative mb-5 w-full">
             <h2 className="text-2xl font-bold text-black mb-2">Enter title:</h2>
               <i class="fa-sharp fa-solid fa-pen absolute mt-3 ml-3 text-purple-500" />
               <input
@@ -132,17 +177,30 @@ export default function Mausam() {
               />
             </div>
             <div className="relative mb-5 w-full">
+            <h2 className="text-2xl font-bold mb-2">About your shayari:</h2>
+              <i class="fas fa-md fa-comment absolute mt-3 ml-3 text-purple-500" />
+              <textarea
+                id="message"
+                name="message"
+                autoComplete="off"
+                placeholder="Describe your Shayari in brief.."
+                className="w-11/12 bg-black rounded-lg border items-center pl-10 text-white border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 h-40 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
+              />
+            </div>
+            <div className="relative mb-5 w-full">
             <h2 className="text-2xl font-bold text-black mb-2">Enter theme:</h2>
               <i class="fa-solid fa-snowflake absolute mt-3 ml-3 text-purple-500" />
               <select 
                 id="theme"
                 name="theme"
-                placeholder="Select your theme" 
+                placeholder="Select your genre" 
                 className="w-4/6 h-11 bg-black rounded-lg border items-center pl-10 text-gray-400 border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 focus:text-white text-base outline-none py-1 pb-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 onChange={(e) => setTheme(e.target.value)}
                 value={theme}
               >
-                <option className="bg-black text-white hover:bg-blue-500" value="" disabled selected>Select your theme</option>
+                <option className="bg-black text-white hover:bg-blue-500" value="" disabled selected>Select your genre</option>
                 <option className="bg-black text-white hover:bg-blue-500" value="love">Love</option>
                 <option className="bg-black text-white hover:bg-blue-500" value="nature">Nature</option>
                 <option className="bg-black text-white hover:bg-blue-500" value="religion">Religion/Spirituality</option>
@@ -170,7 +228,7 @@ export default function Mausam() {
                 name="message"
                 autoComplete="off"
                 placeholder="Write your Shayari here.."
-                className="w-full bg-black rounded-lg border items-center pl-10 text-white border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 h-40 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full h-80 bg-black rounded-lg border items-center pl-10 text-white border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-900 h-40 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
               />

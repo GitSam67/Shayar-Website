@@ -3,7 +3,7 @@
 }
 
 #starter{
-    background-image: url("./assets/homelogo1.webp");
+    background-image: url("./assets/homelogo11.jpg");
 }
 
 .mainlogo {
@@ -52,9 +52,21 @@
 }
 
 #subform {
-    background-image: url("./assets/formlogo.jpg");
+    background-image: url("./assets/formlogo5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(255, 255, 255);
+    opacity: 10;
+    background-color: blueviolet;
+    border-radius: 5px;
+    display: block;
+}
+
+input[type="radio"] {
+    accent-color: blueviolet;
 }
 
 #submit:hover{

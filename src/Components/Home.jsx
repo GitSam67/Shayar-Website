@@ -3,15 +3,15 @@ import {TypeAnimation} from "react-type-animation";
 
 export default function Home() {
   return (
-    <section id="home" className="border-2 border-t-0 border-purple-500">
-      <div className="container mx-auto mt-5 mb-20 flex px-10 pt-10 pb-20 md:flex-row flex-col items-center">
+    <section id="home">
+      <div className="container mx-auto mt-5 flex px-10 pt-10 pb-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow w-full mb-16 md:mb-0 flex flex-col mx-auto items-center text-center">
-          <h1 className="title-font sm:text-2xl md:text-3xl lg:text-4xl mb-4 font-bold text-sky-700">
+          <h1 className="title-font sm:text-3xl md:text-4xl lg:text-5xl mb-4 font-bold text-pink-500">
             Welcome to <br/>
-            <span className="text-purple-700"> India's budding community for Shayar's </span> 
+            <span className="text-purple-600"> India's budding community for Shayar's </span> 
             <br className="hidden lg:inline-block" /><br className="hidden lg:inline-block" />
           </h1>
-          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 title-font sm:text-4xl text-3xl mb-4 font-extrabold">
+          <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 via-purple-600 to-pink-600 title-font sm:text-3xl md:text-4xl mb-4 font-extrabold">
             <TypeAnimation
               sequence={[
                 'Shayar App', 
@@ -25,7 +25,7 @@ export default function Home() {
                 'Evergrowing Community',
                 1000,
               ]}
-              speed={70}
+              speed={80}
               wrapper="b"
               repeat={Infinity}
               />
