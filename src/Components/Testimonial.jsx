@@ -4,7 +4,7 @@ export default function Testimonial(){
     return (
         <>
             <section id="testimonial">
-                <div className="bg-purple-600 border-2 text-white border-purple-500 mt-2 mb-2 text-justify flex flex-col items-center justify-center">
+                <div className="bg-purple-600 border-2 text-white border-purple-500 text-justify flex flex-col items-center justify-center">
                 <div className="w-5/6 text-center">
                     <h1 className="mb-5 font-bold text-xl"> Testimonial Section </h1>
                     <p>

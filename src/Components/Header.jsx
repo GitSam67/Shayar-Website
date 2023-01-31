@@ -3,27 +3,18 @@ import { NavHashLink } from "react-router-hash-link";
 
 export default function Header() {
 
-  let Links = [
-    { name: "HOME", link: "/" },
-    { name: "SERVICE", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "BLOG'S", link: "/" },
-    { name: "CONTACT", link: "/" },
-  ];
-
   let [open, setOpen] = useState(false);
 
   return (
     <header id="navbar" className="bg-black shadow-md w-full fixed top-0 left-0">
       <nav className="container md:flex items-center justify-between py-4 md:px-10 px-7">
-        <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-    text-gray-800 text-left'>
+        <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-left'>
           <a className="title-font font-bold text-2xl flex flex-row items-center" href="#starter">
             <img className="mainlogo h-16 w-36 rounded-xl border-2 border-purple-900" alt="logo" />
           </a>
         </div>
 
-        <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+        <div onClick={() => setOpen(!open)} className='text-3xl absolute right-9 top-6 cursor-pointer md:hidden'>
           <i class={open ? 'fa fa-close text-white' : 'fa-solid fa-bars text-white'}></i>
         </div>
 
@@ -62,10 +53,4 @@ export default function Header() {
     </nav>
   </header >
 )
-
-  //     <div id="link" className="w-2/3 md:py-1 md:pl-3 flex flex-row items-center text-base justify-center">
-
-  //     </div>
-  //   </nav>
-  // </header>
 }

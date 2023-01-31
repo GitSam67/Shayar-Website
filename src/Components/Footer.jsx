@@ -3,16 +3,16 @@ import React from "react";
 export default function Footer() {
     return (
         <section id="footer" className="bg-black">
-            <div className="container px-5 py-5 mx-auto mt-1">
-                <div className="grid grid-cols-3">
-                <div className="items-center text-center mx-auto">
-                    <h2 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Shayar Community</h2>
-                    <h6 className="text-center text-white">Thank you for visiting our community page. Connect with us over socials. <br /> <br /> Keep Exploring 🚀. . .</h6>
+            <div className="container md:px-5 py-5 mx-auto">
+                <div className="flex flex-col sm:flex-row">
+                <div className="md:w-1/3 items-center text-center mx-auto">
+                    <h2 className="sm:text-3xl text-2xl font-medium title-font text-white mb-5">• Shayar Community</h2>
+                    <h6 className="text-center text-white mb-10 px-7">Thank you for visiting our community page. Connect with us over socials. <br /><p className="my-5"> Keep Exploring 🚀. . . </p></h6>
                 </div>
 
-                <div className="items-center mx-auto pr-10">
-                    <h2 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Quick links</h2>
-                    <div id="quick" className="flex flex-col text-left">
+                <div className="md:w-1/3 items-center text-center mx-auto">
+                    <h2 className="sm:text-3xl text-2xl font-medium title-font md:mr-10 text-white mb-4">• Quick page links</h2>
+                    <div id="quick" className="flex flex-col text-left md:ml-16 mb-10">
                     <a className="transition delay-40 title-font font-medium text-white hover:text-purple-500 duration-500" href="#starter"><i class="fas fa-chevron-circle-right"></i> home</a>
                     <a className="transition delay-40 title-font font-medium text-white py-1 hover:text-purple-500 duration-500" href="#about"><i class="fas fa-chevron-circle-right"></i> genre</a>
                     <a className="transition delay-40 title-font font-medium text-white py-1 hover:text-purple-500 duration-500" href="#skills"><i class="fas fa-chevron-circle-right"></i> open mics</a>
@@ -22,8 +22,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div class="items-center text-white">
-                    <h2 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4"> Contact info</h2>
+                <div class="md:w-1/3 items-center text-white mx-auto">
+                    <h2 className="sm:text-3xl text-2xl font-medium title-font text-white mb-4">• Contact info</h2>
                     <p className="py-1"> <i class="fas fa-phone text-purple-500 mr-2"></i><a href="tel:+91 704-350-7789">+91 704-350-7789</a></p>
                     <p className="py-1"> <i class="fas fa-envelope text-purple-500 mr-2 "></i><a href="mailto:info@shayar.me">info@shayar.me</a></p>
                     <p className="py-1"> <i class="fas fa-map-marked-alt text-purple-500 mr-2"></i><a href="https://google.com">G-405,Darshanam Plaza,<br /> Danteshwar,Vadodara,<br /> India-390004</a></p>

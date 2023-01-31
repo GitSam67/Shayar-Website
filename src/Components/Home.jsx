@@ -6,7 +6,7 @@ export default function Home() {
     <section id="home">
       <div className="container mx-auto mt-20 flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:flex-grow w-full mb-16 md:mb-0 flex flex-col mx-auto items-center text-center">
-          <h1 className="title-font sm:text-2xl md:text-3xl lg:text-4xl mb-4 font-black font-serif text-pink-500">
+          <h1 className="title-font sm:text-3xl md:text-4xl mb-4 font-black font-serif text-pink-500">
             Welcome to <br/>
             <span className="text-purple-600"> India's budding community for Shayar's </span> 
             <br className="hidden lg:inline-block" /><br className="hidden lg:inline-block" />
