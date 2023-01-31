@@ -16,7 +16,9 @@ export default function App() {
     <Header />
     <Home />
     </div>
+    <div id="about" className="bg-no-repeat bg-contain w-full h-auto">
     <About />
+    </div>
     <Shayari />
     <OpenMic />
     <Traction />

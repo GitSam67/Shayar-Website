@@ -15,10 +15,7 @@
 }
 
 #about {
-    background-image: url("./assets/shayarmainlogo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:30%;
+    content: url("./assets/shayarmainlogo.jpg");
 }
 
 #applogo{
