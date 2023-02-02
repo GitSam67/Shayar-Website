@@ -45,7 +45,7 @@ export default function Header() {
         </NavHashLink>
         </li>
         <li className='md:ml-8 text-xl md:my-0 my-7'>
-        <a href="../src/mausam.html" className="transition delay-40 font-black font-mono text-xl text-white border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500  duration-200">
+        <a href="../Shayar-Website/src/mausam.html" className="transition delay-40 font-black font-mono text-xl text-white border-b-2 border-transparent hover:text-pink-500 hover:border-pink-500  duration-200">
           Mausam <sup id="live" className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500">Live</sup>
         </a>
         </li>
