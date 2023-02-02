@@ -16,6 +16,18 @@
 
 #about {
     content: url("./assets/shayarmainlogo.jpg");
+    height: 600px;
+}
+
+@media screen and (max-width:600px) {
+    #about {
+        height: 200px;
+    }
+}
+@media screen and (min-width:600px) and  (max-width:1000px) {
+    #about {
+        height: 400px;
+    }
 }
 
 #applogo{
