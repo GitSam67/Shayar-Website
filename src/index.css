@@ -6,6 +6,12 @@
     background-image: url("./assets/homelogo11.jpg");
 }
 
+@media screen and (max-width:500px) {
+    #starter {
+        background-position: 10%;
+    }
+}
+
 .mainlogo {
     content: url("./assets/shayarlogo.png");
 }
